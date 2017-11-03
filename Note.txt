@@ -1,0 +1,10 @@
+****Get CSS in Blade template*****
+{{ URL::asset('js/scrollTo.js'); }} // Generates the path to public directory public/js/scrollTo.js
+
+{{ URL::asset('css/css.css'); }} // Generates the  path to public directory public/css/css.css
+
+OR 
+{{ HTML::script('js/scrollTo.js'); }} // Generates the  path to public directory public/js/scrollTo.js
+
+{{ HTML::style('css/css.css'); }} // Generates the path to public directory public/css/css.css 
+********************************** 
