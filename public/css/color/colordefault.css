@@ -1608,7 +1608,10 @@ blockquote {
   display: table; }
 
 .slick-slide img {
-  margin: auto; }
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
 
 /* #Transition */
 .swin-transition, a#open-popup, #popup, .color-setting li, .color-setting a, .swin-sc-contact .item .media-left .wrapper-icon, .swin-sc-product.products-02 .products .item .block-img:before, .swin-btn, .swin-btn:after, ul.nav.nav-tabs > li > a, .title, .title a, .socials li a, .swin-sc-isotope .grid-item .grid-wrap-item:before, .swin-sc-isotope .grid-item .gallery-title, .swin-sc-video .play-btn, .swin-sc-event .swin-sc-event-inner, .swin-sc-partner .item img, .swin-sc-contact-form .form-group .input-group .input-group-addon {

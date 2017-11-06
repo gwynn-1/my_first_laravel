@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    {{print_r($user)}}
+    {{--{{print_r($foodpaging)}}--}}
     <div class="page-container">
         <div class="top-header top-bg-parallax">
             <div data-parallax="scroll" data-image-src="images/slider/slider2-bg1.jpg" class="slides parallax-window">
@@ -47,7 +47,7 @@
                                             @foreach($foodstoday as $f)
                                             <div class="item product-01">
                                                 <div class="item-left"><img src="images/hinh_mon_an/{{$f->image}}" alt="" class="img img-responsive">
-                                                    <div class="content-wrapper"><a href="chi-tiet-mon-an.html" class="title">{{$f->name}}</a>
+                                                    <div class="content-wrapper"><a href="detail/{{$f->id}}/{{$f->url}}" class="title">{{$f->name}}</a>
                                                         <div class="dot">...................</div>
                                                         <div class="des">{{$f->summary}}</div>
                                                     </div>
