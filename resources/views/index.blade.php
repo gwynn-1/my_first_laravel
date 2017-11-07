@@ -1,7 +1,6 @@
 @extends('layout.layout')
 
 @section('content')
-    {{print_r($user)}}
     <div class="page-container">
         <div class="top-header top-bg-parallax">
             <div data-parallax="scroll" data-image-src="images/slider/slider2-bg1.jpg" class="slides parallax-window">
