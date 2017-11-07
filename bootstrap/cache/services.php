@@ -25,10 +25,16 @@
     21 => 'Illuminate\\View\\ViewServiceProvider',
     22 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     23 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    24 => 'App\\Providers\\AppServiceProvider',
-    25 => 'App\\Providers\\AuthServiceProvider',
-    26 => 'App\\Providers\\EventServiceProvider',
-    27 => 'App\\Providers\\RouteServiceProvider',
+    24 => 'Backpack\\Generators\\GeneratorsServiceProvider',
+    25 => 'Jenssegers\\Date\\DateServiceProvider',
+    26 => 'Backpack\\Base\\BaseServiceProvider',
+    27 => 'Intervention\\Image\\ImageServiceProvider',
+    28 => 'Collective\\Html\\HtmlServiceProvider',
+    29 => 'Backpack\\CRUD\\CrudServiceProvider',
+    30 => 'App\\Providers\\AppServiceProvider',
+    31 => 'App\\Providers\\AuthServiceProvider',
+    32 => 'App\\Providers\\EventServiceProvider',
+    33 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -43,10 +49,15 @@
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
     10 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    11 => 'App\\Providers\\AppServiceProvider',
-    12 => 'App\\Providers\\AuthServiceProvider',
-    13 => 'App\\Providers\\EventServiceProvider',
-    14 => 'App\\Providers\\RouteServiceProvider',
+    11 => 'Backpack\\Generators\\GeneratorsServiceProvider',
+    12 => 'Jenssegers\\Date\\DateServiceProvider',
+    13 => 'Backpack\\Base\\BaseServiceProvider',
+    14 => 'Intervention\\Image\\ImageServiceProvider',
+    15 => 'Backpack\\CRUD\\CrudServiceProvider',
+    16 => 'App\\Providers\\AppServiceProvider',
+    17 => 'App\\Providers\\AuthServiceProvider',
+    18 => 'App\\Providers\\EventServiceProvider',
+    19 => 'App\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (
@@ -147,6 +158,10 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
+    'html' => 'Collective\\Html\\HtmlServiceProvider',
+    'form' => 'Collective\\Html\\HtmlServiceProvider',
+    'Collective\\Html\\HtmlBuilder' => 'Collective\\Html\\HtmlServiceProvider',
+    'Collective\\Html\\FormBuilder' => 'Collective\\Html\\HtmlServiceProvider',
   ),
   'when' => 
   array (
@@ -187,6 +202,9 @@
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
+    array (
+    ),
+    'Collective\\Html\\HtmlServiceProvider' => 
     array (
     ),
   ),

@@ -14,7 +14,7 @@
                             <label class="col-md-4 control-label"><?php echo e(trans('backpack::base.email_address')); ?></label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="email" value="<?php echo e(old('username')); ?>">
+                                <input type="email" class="form-control" name="email" value="<?php echo e(old('email')); ?>">
 
                                 <?php if($errors->has('email')): ?>
                                     <span class="help-block">

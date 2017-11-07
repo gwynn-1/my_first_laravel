@@ -44,7 +44,7 @@
                                             <?php $__currentLoopData = $foodstoday; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $f): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                             <div class="item product-01">
                                                 <div class="item-left"><img src="images/hinh_mon_an/<?php echo e($f->image); ?>" alt="" class="img img-responsive">
-                                                    <div class="content-wrapper"><a href="chi-tiet-mon-an.html" class="title"><?php echo e($f->name); ?></a>
+                                                    <div class="content-wrapper"><a href="detail/<?php echo e($f->id); ?>/<?php echo e($f->url); ?>" class="title"><?php echo e($f->name); ?></a>
                                                         <div class="dot">...................</div>
                                                         <div class="des"><?php echo e($f->summary); ?></div>
                                                     </div>

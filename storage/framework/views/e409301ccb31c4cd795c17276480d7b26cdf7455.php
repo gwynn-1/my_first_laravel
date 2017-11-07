@@ -19,7 +19,7 @@
           <!-- ================================================ -->
           <!-- ==== Recommended place for admin menu items ==== -->
           <!-- ================================================ -->
-          <li><a href="<?php echo e(url('admin/tag')); ?>"><i class="fa fa-dashboard"></i> <span><?php echo e(trans('backpack::base.dashboard')); ?></span></a></li>
+          <li><a href="<?php echo e(url(config('backpack.base.route_prefix', 'admin').'/dashboard')); ?>"><i class="fa fa-dashboard"></i> <span><?php echo e(trans('backpack::base.dashboard')); ?></span></a></li>
 
 
           <!-- ======================================= -->
