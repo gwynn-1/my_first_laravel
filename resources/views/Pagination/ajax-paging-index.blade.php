@@ -5,10 +5,10 @@
                 <div class="blog-item item swin-transition">
                     <div class="block-img"><img src="images/hinh_mon_an/{{$f->image}}" alt="" style="width: 200px;height: 200px" class="img img-responsive">
                         <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount">{{$f->price}} <span class="price-symbol">vnd</span></span></div>
-                        <div class="group-btn"><a href="chi-tiet-mon-an.html" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a><a href="javascript:void(0)" class="swin-btn btn-add-to-card"><i class="fa fa-shopping-basket"></i></a></div>
+                        <div class="group-btn"><a href="detail/{{$f->id}}/{{$f->url}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a><a href="javascript:void(0)" class="swin-btn btn-add-to-card"><i class="fa fa-shopping-basket"></i></a></div>
                     </div>
                     <div class="block-content">
-                        <h5 class="title"><a href="chi-tiet-mon-an.html">{{$f->name}}</a></h5>
+                        <h5 class="title"><a href="detail/{{$f->id}}/{{$f->url}}">{{$f->name}}</a></h5>
                         <div class="product-info">{{$f->summary}}</div>
                     </div>
                 </div>

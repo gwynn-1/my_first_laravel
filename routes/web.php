@@ -13,7 +13,7 @@
 
 Route::get('/', "IndexController@loadViewAction");
 
-Route::get('/detail/{id}', "MainController@detail");
+Route::get('/detail/{id}/{url}', "DetailController@loadViewAction");
 
 Route::get('/checkout', "MainController@checkout");
 

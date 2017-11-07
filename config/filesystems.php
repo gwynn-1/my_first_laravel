@@ -64,5 +64,9 @@ return [
         ],
 
     ],
+    'upload' =>[
+        'driver'=>'local',
+        'root'=>public_path('upload')
+    ]
 
 ];

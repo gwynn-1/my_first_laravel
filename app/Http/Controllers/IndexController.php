@@ -3,21 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\foodsModel;
-use App\User;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
-    public $foodModels;
-
-    /**
-     * IndexController constructor.
-     * @param $foodModels
-     */
-    public function __construct()
-    {
-        $this->foodModels = new foodsModel();
-    }
 
 
     /**
@@ -26,15 +15,14 @@ class IndexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function loadViewAction(Request $res){
-        $foodsToday = $this->foodModels->getFoodsToday();
-        $foods = $this->foodModels->getAllFoods();
-        $paging = foodsModel::paginate(6);
-        $user = User::all();
+        $foodsToday = DB::table("foods")
+                        ->join("pageurl","foods.id_url","=","pageurl.id")
+                        ->where("foods.today",1)->get();
+        $paging = DB::table("foods")->join("pageurl","foods.id_url","=","pageurl.id")->paginate(6);
         if($res->ajax())
             return view("Pagination.ajax-paging-index",["foodpaging"=>$paging]);
-        return view("index",["foodstoday"=>$foodsToday,"foods"=>$foods,"foodpaging"=> $paging,"user"=>$user]);
+        return view("index",["foodstoday"=>$foodsToday,"foodpaging"=> $paging]);
     }
-
 
 
     /**
